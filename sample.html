@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Photo Album</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .album {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .album-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 5px;
+        }
+
+        .album-item img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .download-btn {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #333;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .download-btn:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="album">
+        <!-- Repeat the following div for each photo -->
+        <div class="album-item">
+            <img src="gallery img/Image_001.jpg" alt="Image 1">
+            <a class="download-btn" href="gallery img/Image_001.jpg" download>full screen</a>
+        </div>
+        <div class="album-item">
+            <img src="gallery img/Image_002.jpg" alt="Image 1">
+            <a class="download-btn" href="gallery img/Image_002.jpg" download>full screen</a>
+        </div>
+        <div class="album-item">
+            <img src="gallery img/Image_003.jpg" alt="Image 1">
+            <a class="download-btn" href="gallery img/Image_003.jpg" download>full screen</a>
+        </div>
+        <div class="album-item">
+            <img src="gallery img/Image_004.jpg" alt="Image 1">
+            <a class="download-btn" href="gallery img/Image_004.jpg" download>full screen</a>
+        </div>
+        <div class="album-item">
+            <img src="gallery img/Image_005.jpg" alt="Image 1">
+            <a class="download-btn" href="gallery img/Image_005.jpg" download>full screen</a>
+        </div>
+        <div class="album-item">
+            <img src="gallery img/Image_006.jpg" alt="Image 1">
+            <a class="download-btn" href="gallery img/Image_006.jpg" download>full screen</a>
+        </div>
+        <div class="album-item">
+            <img src="gallery img/Image_007.jpg" alt="Image 1">
+            <a class="download-btn" href="gallery img/Image_007.jpg" download>full screen</a>
+        </div>
+        <div class="album-item">
+            <img src="gallery img/Image_008.jpg" alt="Image 1">
+            <a class="download-btn" href="gallery img/Image_008.jpg" download>full screen</a>
+        </div>
+        <div class="album-item">
+            <img src="gallery img/Image_009.jpg" alt="Image 1">
+            <a class="download-btn" href="gallery img/Image_009.jpg" download>full screen</a>
+        </div>
+        <div class="album-item">
+            <img src="gallery img/Image_010.jpg" alt="Image 1">
+            <a class="download-btn" href="gallery img/Image_010.jpg" download>full screen</a>
+        </div>
+        <div class="album-item">
+            <img src="gallery img/Image_011.jpg" alt="Image 1">
+            <a class="download-btn" href="gallery img/Image_011.jpg" download>full screen</a>
+        </div>
+        <div class="album-item">
+            <img src="gallery img/Image_012.jpg" alt="Image 1">
+            <a class="download-btn" href="gallery img/Image_012.jpg" download>full screen</a>
+        </div>
+        <div class="album-item">
+            <img src="gallery img/Image_013.jpg" alt="Image 1">
+            <a class="download-btn" href="gallery img/Image_013.jpg" download>full screen</a>
+        </div>
+        <div class="album-item">
+            <img src="gallery img/Image_014.jpg" alt="Image 1">
+            <a class="download-btn" href="gallery img/Image_014.jpg" download>full screen</a>
+        </div>
+        <!-- Repeat the above div for each image -->
+
+        <!-- Add more album items as needed -->
+
+    </div>
+</body>
+</html>
